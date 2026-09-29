@@ -1,35 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
 
-
-.container{
+.container {
     background-color: cadetblue;
     width: 400px;
+    max-width: 100%;
     padding: 10px;
 }
 
-.inputs{
+.inputs {
     width: 100%;
-    margin: auto;
     display: flex;
     justify-content: space-around;
 }
 
-.inputs input{
+.inputs input {
     width: 50%;
     height: 50px;
 }
 
-.buttonsContainer{
+.mensaje-error {
+    background-color: #ffe0e0;
+    color: #b00020;
+    border: 1px solid #b00020;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.buttonsContainer {
     display: flex;
     flex-direction: column;
 }
-.buttonGroup{
-    margin: auto;
+
+.buttonGroup {
     display: flex;
-    justify-content: center;
-    
+    width: 100%;
 }
 
-.buttonGroup button{
-    width: 100px;
+.buttonGroup button {
+    flex: 1; 
     height: 100px;
 }
