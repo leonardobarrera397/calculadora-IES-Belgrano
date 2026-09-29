@@ -1,48 +1,164 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma", "Segoe UI", sans-serif;
 }
 
+body {
+    background: linear-gradient(135deg, #0058ee 0%, #3a93ff 50%, #80c0ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- Contenedor estilo Ventana Windows XP --- */
 .container {
-    background-color: cadetblue;
-    width: 400px;
+    background-color: #ece9d8;
+    width: 320px;
     max-width: 100%;
-    padding: 10px;
+    border: 3px solid #0055ea;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    position: relative;
 }
 
+/* Simulador de Barra de Título Windows XP */
+.subtitulo {
+    background: linear-gradient(to bottom, 
+        #0058ee 0%, 
+        #3593ff 4%, 
+        #288eff 10%, 
+        #0055ea 50%, 
+        #0046d5 85%, 
+        #0035a6 100%);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: -6px -6px 8px -6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-shadow: 1px 1px 1px #0f3875;
+    display: flex;
+    align-items: center;
+}
+
+/* --- Pantalla / Inputs --- */
 .inputs {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 2px;
+    background: #ffffff;
+    border: 2px solid #7f9db9;
+    border-radius: 2px;
+    padding: 4px;
+    margin-bottom: 8px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .inputs input {
-    width: 50%;
-    height: 50px;
+    width: 100%;
+    height: 24px;
+    border: none;
+    background: transparent;
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #000;
+    outline: none;
 }
 
+#campoAuxiliar {
+    font-size: 12px;
+    color: #666;
+    height: 18px;
+}
+
+#campoPrincipal {
+    font-size: 20px;
+}
+
+/* --- Mensaje de Error --- */
 .mensaje-error {
-    background-color: #ffe0e0;
+    background-color: #ffffe1;
     color: #b00020;
-    border: 1px solid #b00020;
-    border-radius: 4px;
-    padding: 8px;
-    margin: 10px 0;
+    border: 1px solid #aca899;
+    font-size: 11px;
+    padding: 4px;
+    margin-bottom: 8px;
     text-align: center;
+    border-radius: 2px;
 }
 
+/* --- Botones --- */
 .buttonsContainer {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 .buttonGroup {
     display: flex;
+    gap: 4px;
     width: 100%;
 }
 
 .buttonGroup button {
-    flex: 1; 
-    height: 100px;
+    flex: 1;
+    height: 36px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(to bottom, #ffffff 0%, #ece9d8 40%, #e3dece 100%);
+    border: 1px solid #003c74;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0px #ffffff, 1px 1px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Efectos al pasar el mouse por encima */
+.buttonGroup button:hover {
+    background: linear-gradient(to bottom, #fff8e5 0%, #fbe4af 40%, #fcd36a 100%);
+    border-color: #e59700;
+}
+
+/* Efecto al presionar botón */
+.buttonGroup button:active {
+    background: #dedabf;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+/* Botones especiales */
+.funcion#limpiar {
+    color: #a00000;
+}
+
+.funcion.igual {
+    background: linear-gradient(to bottom, #e3dece 0%, #cbd5e1 100%);
 }
