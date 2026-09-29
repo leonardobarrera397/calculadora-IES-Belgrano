@@ -1,0 +1,35 @@
+
+
+.container{
+    background-color: cadetblue;
+    width: 400px;
+    padding: 10px;
+}
+
+.inputs{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs input{
+    width: 50%;
+    height: 50px;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.buttonGroup{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buttonGroup button{
+    width: 100px;
+    height: 100px;
+}
