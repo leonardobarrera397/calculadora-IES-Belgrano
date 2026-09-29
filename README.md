@@ -1,6 +1,6 @@
-# 🧮 Calculadora Windows XP
+# 🧮 Calculadora
 
-Este proyecto es un **Trabajo Práctico** desarrollado para la materia **Prácticas Profesionalizantes** de la carrera de **Desarrollo de Software** (o afín) en el **IES Manuel Belgrano**.
+Este proyecto es un **Trabajo Práctico** desarrollado para la materia **Prácticas Profesionalizantes** de la carrera de **Desarrollo de Software** en el **IES Manuel Belgrano**.
 
 Consiste en una calculadora web interactiva construida con tecnologías estándar del desarrollo web frontend (**HTML5, CSS3 y JavaScript Vanilla**), adaptada visualmente con una interfaz retro que emula el icónico estilo visual **Luna (Azul)** de **Windows XP**.
 
