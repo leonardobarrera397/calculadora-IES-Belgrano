@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h2 class="titulo-mayoredad" id="titulo">Titulo</h2>
-    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos perferendis, ullam repellat quidem facilis consequatur molestiae dicta aliquid? Repellat sit corrupti, 
-        aliquid quasi at neque quod ad ex quisquam libero.</p>
-
-    <a href="" class="hipervinculo">Hipervinculo</a>
-    <button id="Boton">Clickeame</button>
-
-    <script src="js/dom.js"></script>
-
-
-
-    <h3>Calculadora</h3>
+    <h1 class="titulo" id="titulo">Trabajo practico practicas profesionalizantes IES Manuel Belgrano</h1>
+    <h2 class="subtitulo" id="subtitulo">Calculadora</h2>
     <div class="container">
         <div class="inputs">
-            <input type="text" name="" id="auxiliar">
-            <input type="text" name="" id="principal">
+            <input type="text" name="campoAuxiliar" id="campoAuxiliar">
+            <input type="text" name="campoPrincipal" id="campoPrincipal" readonly>
         </div>
         <div class="buttonsContainer">
-            <div class="buttonGroup">
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                 <button>C</button>
+            <div class="buttonGroup"> 
+                <button class="numero" id="boton7">7</button>
+                <button class="numero" id="boton8">8</button>
+                <button class="numero" id="boton9">9</button>
+                 <button class="funcion" id="limpiar">C</button>
             </div>
             <div class="buttonGroup">
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button>/</button>
+                <button class="numero" id="boton4">4</button>
+                <button class="numero" id="boton5">5</button>
+                <button class="numero" id="boton6">6</button>
+                <button class="funcion" id="dividir">/</button>
             </div>
             <div class="buttonGroup">
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button>*</button>
+                <button class="numero" id="boton1">1</button>
+                <button class="numero" id="boton2">2</button>
+                <button class="numero" id="boton3">3</button>
+                <button class="funcion" id="multiplicar">*</button>
             </div>
             <div class="buttonGroup">
-                <button id="0">0</button>
-                <button>=</button>
-                <button>-</button>
-                <button>+</button>
+                <button class="numero" id="boton0">0</button>
+                <button class="funcion" id="igual">=</button>
+                <button class="funcion" id="restar">-</button>
+                <button class="funcion" id="sumar">+</button>
             </div>
         </div>
     </div>
